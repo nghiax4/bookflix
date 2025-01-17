@@ -55,8 +55,8 @@ const get_books = async (): Promise<Book[]> => {
         publishyear: matterResult.data.publishyear,
         rating: parseFloat(matterResult.data.rating),
         review: matterResult.content, // The Markdown content itself (without front matter)
-        coverUrl: `book-covers/${id}.png`,
-        url: `bookview/${id}`,
+        coverUrl: `/book-covers/${id}.png`,
+        url: `/bookview/${id}`,
       }
     })
   } catch (error) {
@@ -82,11 +82,11 @@ const get_articles = async (): Promise<Article[]> => {
         id: String(id),
         title: matterResult.data.title,
         author: matterResult.data.author,
-        publishDate: matterResult.data.publishDate,
+        publishdate: matterResult.data.publishdate,
         description: matterResult.data.description,
         content: matterResult.content, // The actual article content without front matter
-        coverUrl: `gocnhinmoi-images/${id}/articleCover.jpg`,
-        url: `articleview/${id}`
+        coverUrl: `/gocnhinmoi-images/${id}/articleCover.jpg`,
+        url: `/articleview/${id}`
       }
     })
   } catch (error) {

@@ -1,2 +1,6 @@
-export { default as Landing } from './Landing/Landing'
-export { default as FindBooks } from './FindBooks/FindBooks'
+export { default as Landing } from "./Landing/Landing"
+export { default as FindBooks } from "./FindBooks/FindBooks"
+export { default as BookView } from "./BookView/BookView"
+export { default as Articles } from "./Articles/Articles"
+export { default as ArticleView } from "./ArticleView/ArticleView"
+export { default as Notfound } from "./Notfound/Notfound"
